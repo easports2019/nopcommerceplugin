@@ -383,6 +383,9 @@ namespace Nop.Web.Areas.Admin.Models.Catalog
         [NopResourceDisplayName("Admin.Catalog.Products.Fields.Published")]
         public bool Published { get; set; }
 
+        [NopResourceDisplayName("Admin.Catalog.Products.Fields.Author")]
+        public string Author { get; set; }
+
         public string PrimaryStoreCurrencyCode { get; set; }
 
         public string BaseDimensionIn { get; set; }

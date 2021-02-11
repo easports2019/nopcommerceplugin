@@ -834,6 +834,7 @@ namespace Nop.Web.Areas.Admin.Controllers
                 var product = model.ToEntity<Product>();
                 product.CreatedOnUtc = DateTime.UtcNow;
                 product.UpdatedOnUtc = DateTime.UtcNow;
+                product.Author = model.Author;
                 await _productService.InsertProductAsync(product);
 
                 //search engine name
@@ -955,6 +956,10 @@ namespace Nop.Web.Areas.Admin.Controllers
 
                 product.UpdatedOnUtc = DateTime.UtcNow;
                 await _productService.UpdateProductAsync(product);
+                
+                product.Author = model.Author;
+                await _productService.UpdateProductAsync(product);
+
 
                 //remove associated products
                 if (previousProductType == ProductType.GroupedProduct && product.ProductType == ProductType.SimpleProduct)
