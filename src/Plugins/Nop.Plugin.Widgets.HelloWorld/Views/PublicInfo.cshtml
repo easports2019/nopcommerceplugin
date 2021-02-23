@@ -1,0 +1,16 @@
+﻿@model Nop.Plugin.Widgets.HelloWorld.Models.PublicInfoModel
+@{
+    Layout = "";
+    Html.AddCssFileParts("~/Plugins/Widgets.HelloWorld/Content/helloWorld.css");
+}
+
+<div class="helloWorld">
+    <div class="helloWorld-block">
+        @{
+            if (!string.IsNullOrEmpty(Model.Text))
+            {
+                <h3 class="helloWorld-text">@Model.Text</h3>
+            }
+        }
+    </div>
+</div>

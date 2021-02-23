@@ -1,0 +1,11 @@
+﻿{
+  "Group": "Widgets",
+  "FriendlyName": "Hello World",
+  "SystemName": "Widgets.HelloWorld",
+  "Version": "1.00",
+  "SupportedVersions": [ "4.20", "4.30", "4.40" ],
+  "Author": "ea sports",
+  "DisplayOrder": 1,
+  "FileName": "Nop.Plugin.Widgets.HelloWorld.dll",
+  "Description": "This plugin shows any text in product cart"
+}
