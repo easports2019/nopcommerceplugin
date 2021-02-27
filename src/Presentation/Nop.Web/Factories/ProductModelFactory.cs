@@ -1223,6 +1223,7 @@ namespace Nop.Web.Factories
             {
                 Id = product.Id,
                 Name = await _localizationService.GetLocalizedAsync(product, x => x.Name),
+                Author = await _localizationService.GetLocalizedAsync(product, x => x.Author),
                 ShortDescription = await _localizationService.GetLocalizedAsync(product, x => x.ShortDescription),
                 FullDescription = await _localizationService.GetLocalizedAsync(product, x => x.FullDescription),
                 MetaKeywords = await _localizationService.GetLocalizedAsync(product, x => x.MetaKeywords),
